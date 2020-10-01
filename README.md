@@ -1,6 +1,5 @@
 # Assessment_todoApp
 
-## Getting the Project
 ```
 git clone https://github.com/lmkhwana/assessment_todoApp.git && cd assessment_todoApp
 ```
