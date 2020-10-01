@@ -17,10 +17,10 @@ Access the database and grant the 'luthando' user access
 ```
 - cd backend
 - docker-compose exec db bash
-- mysql -u root -p  // run this command inside the container
-- 56658378  // enter the password, this is strictly for this demo purpose.
-            // on a real world app I wouldn't include passwords in plain text.
-            // Once logged in execute the following commands:
+- mysql -u root -p   (run this command inside the container)
+- 56658378           (enter the password, this is strictly for this demo purpose.)
+                     (on a real world app I wouldn't include passwords in plain text.)
+                     (Once logged in execute the following commands:)
             
 - GRANT ALL ON todos.* TO 'luthando'@'%' IDENTIFIED BY '56658378';
 - FLUSH PRIVILEGES;
