@@ -38,4 +38,4 @@ Access the database and grant the 'luthando' user access
 ```
 
 # Todo
-```show backend setup```
+```show frontend setup```
