@@ -1,11 +1,11 @@
-# assessment_todoApp
+# Assessment_todoApp
 
 ## Getting the Project
 ```
 git clone https://github.com/lmkhwana/assessment_todoApp.git && cd assessment_todoApp
 ```
 
-### Backend setup
+## Backend setup
 ```
 - cd backend
 - docker-compose up -d
@@ -37,5 +37,13 @@ Access the database and grant the 'luthando' user access
 - docker-compose exec app php artisan migrate
 ```
 
-# Todo
-```show frontend setup```
+## Frontend setup
+
+### Navigate to the front end project, create the .env file, build and run the project
+```
+- cd ../frontend
+- echo "VUE_APP_BACKEND_URL=http://localhost:8084/api/todos/" >> .env 
+// If you're using docker-machine change localhost to the docker-machine's ip address
+- docker build -t todolist-ui .
+- docker run -ti todolist-ui
+```
