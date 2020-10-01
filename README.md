@@ -45,4 +45,7 @@ Access the database and grant the 'luthando' user access
 // If you're using docker-machine change localhost to the docker-machine's ip address
 - docker build -t todolist-ui .
 - docker run -ti todolist-ui
+- docker run -it -p 8080:8080 --rm frontend
 ```
+
+```You should be able to access the frontend on http://localhost:8080 or http://{{YOUR_DOCKER_MACHINES_IP_ADDRESS}}:8080```
